@@ -1,0 +1,20 @@
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  border-top-color: transparent;
+}
+
+.nav-tabs>li>a:active, .nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+  border-top-color: transparent;
+}
+
+.brand-viv {
+  border-right-width: 1px !important;
+  border-right-color: #ddd !important;
+}
+
+.header-bar {
+    height: 3px;
+    background-color: #0088ce;
+    margin-bottom: 1px;
+}
