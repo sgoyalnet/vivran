@@ -1,0 +1,21 @@
+<div class="parent">
+	<div class="header-bar"></div>
+	<ul class="nav nav-tabs" id="headerTab">
+		<li><a class="brand-viv"><b>VivRan</b></a></li>
+		<li routerLinkActive="active" class="hidden-xs"><a routerLink="/urlencodedecode">URL Encoder/Decoder</a></li>
+		<li routerLinkActive="active" class="hidden-xs"><a routerLink="/base64encodedecode">Base64 Encoder/Decoder</a></li>
+		<li class="dropdown visible-xs">
+			<a class="dropdown-toggle" data-toggle="dropdown">
+				Menu <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li routerLinkActive="active"><a routerLink="/urlencodedecode">URL Encoder/Decoder</a></li>
+				<li routerLinkActive="active"><a routerLink="/base64encodedecode">Base64 Encoder/Decoder</a></li>
+			</ul>
+  		</li>
+	</ul>
+	<div class="container-fluid">
+		<router-outlet></router-outlet>
+	</div>
+	<footer class="pull-right">&copy; <a href="https://sgoyal.net">sgoyal.net</a></footer>
+</div>

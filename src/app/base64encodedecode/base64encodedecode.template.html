@@ -1,0 +1,47 @@
+<form>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<textarea name="url" (keyup)="onTyping($event)" [value]="model.str"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+                    <button class="btn btn-default" (click)="clear()" type="button">Clear</button>
+                    <button class="btn btn-default" (click)="reset()" type="button">Reset</button>
+					<div class="pull-right">
+						<button class="btn btn-primary" (click)="encodestr()" type="button">Encode</button>
+						<button class="btn btn-primary" (click)="decodestr()" type="button">Decode</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12">
+					Input Text Was
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<textarea class="original-url" [value]="model.originalStr" readonly></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+<hr>
+<div class="row">
+	<div class="col-md-12">
+		<ul>
+			<li>Paste your text in above textarea and click on Encode/Decode button.</li>
+            <li>textarea in right side contains your original text.</li>
+            <li>Reset button will reset your current session and copy your original text to workspace textarea.</li>
+            <li>Clear button will clear your working session including your original text.</li>
+		</ul>
+	</div>
+</div>

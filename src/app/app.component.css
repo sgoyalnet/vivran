@@ -18,3 +18,13 @@
     background-color: #0088ce;
     margin-bottom: 1px;
 }
+.parent {
+  min-height:100%;
+  position: relative;
+}
+footer {
+  padding-top: 10px;
+  position:absolute;
+  bottom:-20;
+  right:10px;
+}
