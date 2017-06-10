@@ -11,7 +11,7 @@ export class Base64EncodeDecodeComponent implements OnInit {
     };
 
     ngOnInit() {
-        this.titleService.setTitle('VivRan || Base64 Encoder/Decoder');
+        this.titleService.setTitle('VivRan Base64 Encoder/Decoder');
     }
 
     model = { str: '', originalStr: '' };

@@ -10,7 +10,7 @@ export class UrlEncodeDecodeComponent implements OnInit {
     constructor(private titleService:Title) { };
 
     ngOnInit() {
-        this.titleService.setTitle ('VivRan || URL Encoder/Decoder');
+        this.titleService.setTitle ('VivRan URL Encoder/Decoder');
     }
 
     model = { url: '', orginalUrl:'' };
